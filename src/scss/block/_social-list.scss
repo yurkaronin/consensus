@@ -1,0 +1,19 @@
+.social-list {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: auto auto auto auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+
+  svg {
+    width: 32px;
+    height: 32px;
+    display: block;
+
+    path {
+      fill: #237d26;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.title {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+  font-family: "Alegreya Sans", sans-serif;
+  margin: 0;
+  margin-bottom: 30px;
+  @media (max-width: 1200px) {
+    font-size: 40px;
+    letter-spacing: initial;
+  }
+  @media (max-width: 600px) {
+    font-size: 36px;
+  }
+  .decorate {
+    color: #fd0e11;
+    position: relative;
+    &::before {
+      content: url("../img/icons/apple-head.svg");
+      position: absolute;
+      top: -60%;
+    }
+  }
+}

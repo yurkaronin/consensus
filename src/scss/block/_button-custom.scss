@@ -1,31 +1,29 @@
-.button-custom {
-  background-color: #fd0e11;
+.button-custom a {
+  background-color: #614199;
   color: #ffffff;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 100%;
-  padding: 20px 40px;
+  padding: 20px 50px;
   text-decoration: none;
-  text-transform: uppercase;
   cursor: pointer;
   text-align: center;
   display: inline-block;
   letter-spacing: 2px;
-  border: 3px solid #fd0e11;
-  font-family: Alegreya Sans;
-  border-radius: 50px;
+  border: 3px solid #614199;
+  border-radius: 5px;
 
   &:hover,
   &:focus {
-    background: #F29F05;
-    border-color: #F29F05;
-    color: #000000;
+    background: #8D63D7;
+    border-color: #8D63D7;
+    color: #ffffff;
   }
   &:active {
-    background: #F2CB04;
-    border-color: #F2CB04;
-    color: #000000;
+    background: #A980F0;
+    border-color: #A980F0;
+    color: #ffffff;
   }
 }
 

@@ -1,12 +1,12 @@
 .title {
   font-weight: 800;
-  font-size: 60px;
+  font-size: 42px;
   line-height: 130%;
   text-align: center;
   color: #000000;
   font-family: "Alegreya Sans", sans-serif;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   @media (max-width: 1200px) {
     font-size: 40px;
     letter-spacing: initial;
@@ -14,6 +14,7 @@
   @media (max-width: 600px) {
     font-size: 36px;
   }
+
   .decorate {
     color: #fd0e11;
     position: relative;
@@ -22,5 +23,14 @@
       position: absolute;
       top: -60%;
     }
+  }
+}
+
+.title--big {
+  font-size: 85px;
+  color: #ffffff;
+  span {
+    color: #000000;
+    text-shadow: 1px 0 1px #ffffff, 0 1px 1px #ffffff, -1px 0 1px #ffffff, 0 -1px 1px #ffffff;
   }
 }

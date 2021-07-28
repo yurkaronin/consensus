@@ -7,8 +7,10 @@ const fileinclude = require('gulp-file-include');
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 
-const sass = require('gulp-sass');
+/* const sass = require('gulp-sass'); */
+const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require('gulp-sass-glob');
+
 const sourcemaps = require('gulp-sourcemaps');
 const gcmq = require('gulp-group-css-media-queries');
 const cleanCSS = require('gulp-clean-css');
@@ -41,7 +43,7 @@ const plumberConfig = {
 };
 
 
-// html-страницы 
+// html-страницы
 task('html:build', () => {
 	return src('./src/html/*.html')
 		.pipe(plumber(plumberConfig))
@@ -57,7 +59,7 @@ task('html:docs', () => {
 		.pipe(dest('./docs/'));
 });
 
-// стилевые файлы 
+// стилевые файлы
 task('styles:build', () => {
 	return src(['./node_modules/normalize.css/normalize.css', './src/scss/main.scss'])
 		.pipe(sourcemaps.init())
@@ -80,7 +82,7 @@ task('styles:docs', () => {
 		.pipe(dest('./docs/css/'));
 });
 
-// шрифты 
+// шрифты
 task('copy:font:build', () => {
 	return src('./src/font/**/*')
 		.pipe(dest('./build/font/'))
@@ -92,7 +94,7 @@ task('copy:font:docs', () => {
 		.pipe(dest('./docs/font/'))
 });
 
-// скрипты 
+// скрипты
 task('scripts:build', () => {
     return src(['./src/js/*.js'])
 		.pipe(sourcemaps.init())
@@ -127,7 +129,7 @@ task('copy:libs:docs', () => {
 		.pipe(dest('./docs/libs/'))
 });
 
-// изображение и иконки 
+// изображение и иконки
 task('copy:img:build', () => {
     return src('./src/img/**/*')
 		.pipe(dest('./build/img/'))
@@ -145,7 +147,7 @@ task('copy:img:docs', () => {
 		.pipe(dest('./docs/img/'));
 })
 
-// отслеживание изменения файлов 
+// отслеживание изменения файлов
 task('watch', () => {
     watch('./src/html/**/*.html', series('html:build'));
     watch('./src/scss/**/*.scss', series('styles:build'));

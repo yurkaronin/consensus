@@ -8,15 +8,16 @@ html {
   box-sizing: inherit;
 }
 :focus-visible {
-  outline-color: #FD0E11;
+  outline-color: #fd0e11;
 }
 img {
   max-width: 100%;
 }
 a,
 button,
-input {
-  font-family: 'Alegreya Sans', sans-serif;
+input,
+.font-fix {
+  font-family: "Open Sans", sans-serif;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -37,11 +38,11 @@ input[type="radio"].visually-hidden {
 body {
   margin: 0;
   padding: 0;
-  font-style: 400;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 130%;
-  background-color: #F4FFF2;
+  line-height: 120%;
+  background-color: #ffffff;
   color: #000000;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: "Raleway", sans-serif;
 }

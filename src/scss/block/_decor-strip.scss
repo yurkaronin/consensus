@@ -1,14 +1,17 @@
-// декоративная полоска
+/* блок ДЕКОРАТИВНАЯ ПОЛОСКА */
 .decor-strip {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-left: 100px;
+
   @media (max-width: 500px) {
     border-left: 4px double;
     padding-left: 15px;
+    max-width: 100% !important;
+    margin-bottom: 40px !important;
   }
+
   &::before {
     content: "";
     display: block;
@@ -17,8 +20,14 @@
     height: 6px;
     width: 70px;
     left: 0;
+    top: 15px;
+
     @media (max-width: 500px) {
       display: none;
     }
+  }
+
+  &--black::before {
+    background-color: #000000;
   }
 }

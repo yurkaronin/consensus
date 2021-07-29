@@ -1,13 +1,19 @@
-/* подзаголовок или подводка, которая идёт сразу после заголовка внутри смыслового блока*/
+/* блок ПОДЗАГОЛОВОК */
 .lead {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 150%;
   color: #000000;
+
+  @media (max-width: 500px) {
+    max-width: 100% !important;
+  }
+
   p {
     margin-top: 0;
   }
+
   ul {
     list-style: none;
     padding: 0;

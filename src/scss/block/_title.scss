@@ -2,22 +2,30 @@
 .title {
   font-weight: 800;
   font-size: 42px;
-  line-height: 130%;
+  line-height: 120%;
   color: #000000;
   font-family: "Alegreya Sans", sans-serif;
   margin: 0;
   margin-bottom: 45px;
+  text-transform: uppercase;
+
   @media (max-width: 1200px) {
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: initial;
   }
-  @media (max-width: 600px) {
-    font-size: 36px;
+
+  @media (max-width: 500px) {
+    max-width: 100% !important;
+  }
+  span {
+    color: #ffffff;
+    text-shadow: 1px 0 1px #000000, 0 1px 1px #000000, -1px 0 1px #000000, 0 -1px 1px #000000;
   }
 
   .decorate {
     color: #fd0e11;
     position: relative;
+
     &::before {
       content: url("../img/icons/apple-head.svg");
       position: absolute;
@@ -29,6 +37,18 @@
 .title--big {
   font-size: 85px;
   color: #ffffff;
+  text-transform: initial;
+  line-height: 100%;
+  margin-bottom: 30px;
+
+  @media (max-width: 900px) {
+    font-size: 65px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 48px;
+  }
+
   span {
     color: #000000;
     text-shadow: 1px 0 1px #ffffff, 0 1px 1px #ffffff, -1px 0 1px #ffffff, 0 -1px 1px #ffffff;

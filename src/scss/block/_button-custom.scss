@@ -1,3 +1,4 @@
+/* Блок- КНОПКА */
 .button-custom a {
   background-color: #614199;
   color: #ffffff;
@@ -5,7 +6,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
-  padding: 20px 50px;
+  padding: 20px 40px;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
@@ -13,33 +14,38 @@
   letter-spacing: 2px;
   border: 3px solid #614199;
   border-radius: 5px;
+  @media (max-width: 500px) {
+    font-size: 14px;
+    padding: 15px 20px;
+    letter-spacing: 1px;
+  }
 
   &:hover,
   &:focus {
-    background: #8D63D7;
-    border-color: #8D63D7;
+    background: #8d63d7;
+    border-color: #8d63d7;
     color: #ffffff;
   }
   &:active {
-    background: #A980F0;
-    border-color: #A980F0;
+    background: #a980f0;
+    border-color: #a980f0;
     color: #ffffff;
   }
 }
 
 .button-custom--light {
-  background-color: #80C41C;
-  border-color: #80C41C;
+  background-color: #80c41c;
+  border-color: #80c41c;
   color: #000000;
   &:hover,
   &:focus {
-    background: #237D26;
-    border-color: #237D26;
+    background: #237d26;
+    border-color: #237d26;
     color: #ffffff;
   }
   &:active {
-    background: #31B636;
-    border-color: #31B636;
+    background: #31b636;
+    border-color: #31b636;
     color: #ffffff;
   }
 }

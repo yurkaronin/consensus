@@ -46,3 +46,18 @@ body {
   color: #000000;
   font-family: "Raleway", sans-serif;
 }
+
+/* скрытие и показ отдельных элементов на устройствах с разными экранами  */
+.tablet-hide {
+  display: block;
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.tablet-show {
+  display: none;
+  @media (max-width: 1200px) {
+    display: block;
+  }
+}

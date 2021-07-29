@@ -1,0 +1,24 @@
+// декоративная полоска
+.decor-strip {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  @media (max-width: 500px) {
+    border-left: 4px double;
+    padding-left: 15px;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    height: 6px;
+    width: 70px;
+    left: 0;
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+}

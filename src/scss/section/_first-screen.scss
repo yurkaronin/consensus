@@ -2,4 +2,68 @@
 .first-screen {
   background: linear-gradient(95.87deg, #0f1012 26.09%, #31323e 61.51%);
   mix-blend-mode: normal;
+  overflow: hidden;
+
+  .lead {
+    color: #ffffff;
+    max-width: 375px;
+    @media (max-width: 900px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .wrapper {
+    position: relative;
+  }
+
+  .title--big {
+    margin-bottom: 30px;
+    line-height: 100%;
+    @media (max-width: 900px) {
+      font-size: 65px;
+    }
+    @media (max-width: 500px) {
+      font-size: 48px;
+    }
+  }
+
+  .director-picture {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    max-height: 100%;
+    @media (max-width: 1200px) {
+      opacity: 0.4;
+    }
+    @media (max-width: 500px) {
+      display: none;
+    }
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .remaining-seats {
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+}
+
+.first-screen__text {
+  max-width: 795px;
+  padding: 55px 0 82px;
+  position: relative;
+  z-index: 5;
+}
+
+.first-screen__action {
+  display: flex;
+  align-items: center;
+  max-width: 715px;
+  @media (max-width: 500px) {
+    max-width: max-content;
+    margin: 0 auto;
+  }
 }

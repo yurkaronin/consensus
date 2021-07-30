@@ -1,0 +1,42 @@
+/* Бесплатная консультация  */
+.free-consultation {
+  // background-color: #f6f6f6;
+  color: #000000;
+  padding: 50px 0 130px;
+
+  @media (max-width: 1000px) {
+    padding: 35px 0 70px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+
+  h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    color: #000000;
+    margin: 0;
+    padding-right: 20px;
+
+    @media (max-width: 1000px) {
+      padding: 0;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+}

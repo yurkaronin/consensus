@@ -1,1 +1,111 @@
 // лучшие-выигранные-дела
+.best-case {
+  background: linear-gradient(95.87deg, #0f1012 26.09%, #31323e 61.51%);
+  color: #ffffff;
+  padding: 70px 0 60px;
+  position: relative;
+
+  @media (max-width: 1590px) {
+    overflow: hidden;
+  }
+
+  @media (max-width: 900px) {
+    padding: 45px 0;
+  }
+
+  @media (max-width: 500px) {
+    padding: 40px 0 20px;
+  }
+
+  .decor-strip {
+    @media (max-width: 1400px) {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 752px;
+    height: 487px;
+    display: block;
+    background-image: url("../img/best-case/1.png");
+    position: absolute;
+    top: -100px;
+    right: 100px;
+    z-index: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1590px) {
+      opacity: 0.6;
+      top: 0;
+      width: 535px;
+      height: 350px;
+      right: 0;
+    }
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .title--small {
+    max-width: 670px;
+
+    @media (max-width: 1590px) {
+      max-width: max-content;
+    }
+  }
+
+  .decor-strip {
+    @media (max-width: 500px) {
+      padding-left: 15px;
+      margin: 0 !important;
+    }
+  }
+
+  .decor-strip::before {
+    top: 20px;
+  }
+}
+
+.best-case__item {
+  position: relative;
+  z-index: 5;
+}
+
+.best-case__pagination {
+  max-width: max-content;
+  padding-left: 100px;
+
+  @media (max-width: 1590px) {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .swiper-pagination-bullet {
+    border: 1px solid #d9723f;
+    background-color: #d9723f;
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: transparent;
+  }
+}
+
+.best-case__swiper-wrapper {
+  margin-bottom: 40px;
+}

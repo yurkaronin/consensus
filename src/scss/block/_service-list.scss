@@ -1,3 +1,4 @@
+/* Блок СПИСОК УСЛУГ */
 .service-list {
   display: grid;
   gap: 60px 45px;
@@ -18,13 +19,13 @@
 }
 
 .service-list__card {
-  min-width: 315px;
+  // min-width: 315px;
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 750px) {
-    min-width: auto;
-  }
+  // @media (max-width: 750px) {
+  //   min-width: auto;
+  // }
 
   a {
     color: inherit;
@@ -53,7 +54,6 @@
 
       @media (max-width: 750px) {
         font-size: 22px;
-        line-height: 100%;
         max-width: 100%;
       }
     }

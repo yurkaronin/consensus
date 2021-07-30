@@ -18,16 +18,47 @@
 </head>
 
 <body>
-  <!-- @@include('section/header.html') -->
+  
   <main>
     <!-- первый-экран -->
-    @@include('section/first-screen.html')
+    <!-- Первый экран страницы -->
+<section class="first-screen">
+  <div class="wrapper">
+    <div class="first-screen__text">
+      <h2 class="title title--big">Юридическая помощь <span>физлицам и&#160;бизнесу</span></h2>
+
+      <div class="lead decor-strip">
+        <ul>
+          <li>Оперативно работаем, не растягивая задачу на месяцы</li>
+          <li>Поэтапная оплата.</li>
+        </ul>
+      </div>
+
+      <div class="first-screen__action">
+        <div class="button-custom">
+          <a href=""><span class="tablet-hide">Получить консультацию бесплатно</span><span
+              class="tablet-show">Бесплатная консультация</span></a>
+        </div>
+
+        <div class="remaining-seats">
+          <p>Сегодня осталось консультаций</p>
+          <span><del>10</del>2</span>
+        </div>
+      </div>
+
+    </div><!-- .first-screen__text -->
+
+    <div class="director-picture">
+      <img src="./img/director/1.png" alt="фотография директора" width="458" height="668">
+    </div>
+  </div>
+</section>
+
     <!-- услуги-людям -->
     <section class="service-people">
       <div class="wrapper">
 
         <div class="service-people__header">
-
           <div class="service-people__title decor-strip decor-strip--black">
             <h2 class="title"><span>Физлицам –</span> услуги юриста и&#160;адвоката</h2>
           </div>
@@ -45,7 +76,6 @@
             </ul>
           </div><!-- .lead -->
         </div><!-- .service-people__header -->
-
         <div class="service-list">
           <!-- Земельные участки -->
           <article class="service-list__card">
@@ -209,63 +239,17 @@
               </ul>
             </div>
           </article>
+
         </div>
+
+
       </div>
     </section>
-
-    <!-- бесплатная консультация  -->
-    <section class="free-consultation">
-      <div class="wrapper">
-        <h4>Консультация юриста бесплатно</h4>
-        <div class="button-custom">
-          <a href="">Получить консультацию</a>
-        </div>
-      </div>
-    </section>
-
     <!-- лучшие-выигранные-дела -->
     <section class="best-case">
       <div class="wrapper">
         <h2 class="visually-hidden">Наши лучшие победы: решение суда в пользу наших клиентов</h2>
-
-        <!-- Swiper -->
-        <div class="swiper-container mySwiper">
-          <div class="swiper-wrapper best-case__swiper-wrapper">
-
-            <!-- слайд 1  -->
-            <div class="swiper-slide best-case__item">
-              <div class="decor-strip">
-                <p class=" title title--small">Наш клиент продал квартиру на 1-м этаже дороже на 2 млн руб.
-                  <span>Благодаря переводу в нежилой фонд.</span>
-                </p>
-              </div>
-            </div><!-- .swiper-slide -->
-
-            <!-- слайд 1  -->
-            <div class="swiper-slide best-case__item">
-              <div class="decor-strip">
-                <p class=" title title--small">Наш клиент продал квартиру на 1-м этаже дороже на 2 млн руб.
-                  <span>Благодаря переводу в нежилой фонд.</span>
-                </p>
-              </div>
-            </div><!-- .swiper-slide -->
-
-            <!-- слайд 1  -->
-            <div class="swiper-slide best-case__item">
-              <div class="decor-strip">
-                <p class=" title title--small">Наш клиент продал квартиру на 1-м этаже дороже на 2 млн руб.
-                  <span>Благодаря переводу в нежилой фонд.</span>
-                </p>
-              </div>
-            </div><!-- .swiper-slide -->
-
-          </div><!-- .swiper-wrapper -->
-
-          <!-- пагинация слайдера -->
-          <div class="swiper-pagination best-case__pagination"></div>
-        </div>
-
-      </div><!-- .wrapper -->
+      </div>
     </section>
     <!-- услуги-компаниям -->
     <section class="service-companies">
@@ -329,7 +313,7 @@
     </section>
 
   </main>
-  <!-- @@include('section/footer.html') -->
+  
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>

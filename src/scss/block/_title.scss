@@ -54,3 +54,27 @@
     text-shadow: 1px 0 1px #ffffff, 0 1px 1px #ffffff, -1px 0 1px #ffffff, 0 -1px 1px #ffffff;
   }
 }
+
+.title--small {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: initial;
+  max-width: 670px;
+
+  @media (max-width: 900px) {
+    font-size: 34px;
+    line-height: 120%;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 22px;
+  }
+
+  span {
+    color: #000000;
+    text-shadow: 1px 0 1px #ffffff, 0 1px 1px #ffffff, -1px 0 1px #ffffff, 0 -1px 1px #ffffff;
+  }
+}

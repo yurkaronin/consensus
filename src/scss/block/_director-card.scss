@@ -1,0 +1,12 @@
+/* блок директора с резюме */
+.director-card {
+  position: relative;
+
+}
+
+.director-card__photo {
+  max-width: 673px;
+  img {
+    display: block;
+  }
+}

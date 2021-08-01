@@ -1,8 +1,11 @@
 /* Бесплатная консультация  */
 .free-consultation {
-  // background-color: #f6f6f6;
   color: #000000;
   padding: 50px 0 130px;
+
+  &--gray {
+    background-color: #f6f6f6;
+  }
 
   @media (max-width: 1000px) {
     padding: 35px 0 70px;

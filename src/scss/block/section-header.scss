@@ -1,9 +1,18 @@
 /* блок ШАПКА СЕКЦИИ */
 .section-header {
-  display: flex;
+  display: grid;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 65px;
+
+  @media (max-width: 1200px) {
+    gap: 20px;
+  }
+
+  @media (max-width: 1366px) {
+    margin-bottom: 40px;
+  }
 
   @media (max-width: 500px) {
     margin-bottom: 30px;
@@ -11,26 +20,37 @@
 
   .lead {
     max-width: 600px;
+
+    @media (max-width: 1200px) {
+      max-width: 100%;
+    }
+  }
+
+  &--two {
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr;
+    }
+
+    .section-header__title {
+      padding-right: 90px;
+
+      @media (max-width: 1200px) {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+      }
+    }
   }
 }
 
 .section-header__title {
-  max-width: 510px;
-
   @media (max-width: 1100px) {
     margin-bottom: 20px;
   }
 
   .title {
-    max-width: 330px;
     margin: 0;
-  }
-
-  &--long {
-    max-width: 650px;
-
-    .title {
-      max-width: 500px;
-    }
   }
 }

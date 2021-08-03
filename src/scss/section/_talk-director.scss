@@ -1,31 +1,18 @@
-// разговор-директора
+// секция-директора
 .talk-director {
   padding: 65px 0 25px;
   .big-text {
     max-width: 470px;
   }
 
-  .section-header {
-    margin-bottom: 75px;
-
-    @media (max-width: 1070px) {
-      margin-bottom: 30px;
-    }
-  }
-
   .offer-custom__list {
     margin-bottom: 95px;
   }
 
-  .section-header__title--long {
-    border-left: 4px double;
-    padding-left: 15px;
-    max-width: 100%;
-    margin-bottom: 20px;
-    padding-right: 10px;
-    &::before {
-      display: none;
-    }
+  .list-sume {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -47,5 +34,13 @@
   @media (max-width: 1400px) {
     gap: 70px;
     grid-template-columns: auto;
+  }
+}
+
+.talk-director__card {
+  max-width: 720px;
+
+  @media (max-width: 1400px) {
+    max-width: 100%;
   }
 }

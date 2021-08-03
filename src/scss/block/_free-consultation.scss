@@ -1,7 +1,15 @@
 /* Бесплатная консультация  */
 .free-consultation {
   color: #000000;
-  padding: 50px 0 130px;
+  padding: 50px 0 90px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 
   &--gray {
     background-color: #f6f6f6;
@@ -9,17 +17,6 @@
 
   @media (max-width: 1000px) {
     padding: 35px 0 70px;
-  }
-
-  .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-
-    @media (max-width: 1000px) {
-      flex-direction: column;
-    }
   }
 
   h4 {

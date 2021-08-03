@@ -35,11 +35,15 @@
 }
 
 .title--big {
-  font-size: 85px;
+  font-size: 80px;
   color: #ffffff;
   text-transform: initial;
   line-height: 100%;
   margin-bottom: 30px;
+
+  @media (max-width: 1366px) {
+    font-size: 70px;
+  }
 
   @media (max-width: 900px) {
     font-size: 65px;

@@ -1,5 +1,5 @@
 /* Блок- КНОПКА */
-.button-custom a {
+.button-custom {
   background-color: #614199;
   color: #ffffff;
   font-style: normal;
@@ -32,23 +32,23 @@
     border-color: #a980f0;
     color: #ffffff;
   }
-}
 
-.button-custom--light {
-  background-color: #80c41c;
-  border-color: #80c41c;
-  color: #000000;
+  &--light {
+    background-color: #80c41c;
+    border-color: #80c41c;
+    color: #000000;
 
-  &:hover,
-  &:focus {
-    background: #237d26;
-    border-color: #237d26;
-    color: #ffffff;
-  }
+    &:hover,
+    &:focus {
+      background: #237d26;
+      border-color: #237d26;
+      color: #ffffff;
+    }
 
-  &:active {
-    background: #31b636;
-    border-color: #31b636;
-    color: #ffffff;
+    &:active {
+      background: #31b636;
+      border-color: #31b636;
+      color: #ffffff;
+    }
   }
 }

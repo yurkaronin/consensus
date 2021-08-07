@@ -84,14 +84,14 @@ task('styles:docs', () => {
 
 // шрифты
 task('copy:font:build', () => {
-	return src('./src/font/**/*')
-		.pipe(dest('./build/font/'))
+	return src('./src/fonts/**/*')
+		.pipe(dest('./build/fonts/'))
 		.pipe(browserSync.reload({ stream: true }));
 });
 
 task('copy:font:docs', () => {
-	return src('./src/font/**/*')
-		.pipe(dest('./docs/font/'))
+	return src('./src/fonts/**/*')
+		.pipe(dest('./docs/fonts/'))
 });
 
 // скрипты

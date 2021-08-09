@@ -1,5 +1,16 @@
 .ask-question {
   max-width: 520px;
+
+  @media (max-width: 1400px) {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 1100px) {
+    display: none;
+  }
 }
 
 .ask-question__title {

@@ -26,6 +26,12 @@
       margin-bottom: 40px;
     }
   }
+
+  .decor-strip::before {
+    @media (max-width: 1400px) {
+      top: 15px;
+    }
+  }
 }
 
 .first-screen__wrapper {
@@ -33,6 +39,10 @@
   padding: 55px 0 82px 133px;
   position: relative;
   z-index: 5;
+
+  @media (max-width: 1370px) {
+    padding-left: 0;
+  }
 }
 
 .first-screen__action {

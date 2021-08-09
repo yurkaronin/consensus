@@ -5,15 +5,17 @@
   justify-content: space-between;
   padding-left: 100px;
 
+  @media (max-width: 1400px) {
+    padding-left: 70px;
+  }
+
   @media (max-width: 1200px) {
     padding: 0;
   }
 
   @media (max-width: 500px) {
-    // border-left: 4px double;
-    // padding-left: 15px;
     max-width: 100% !important;
-    margin-bottom: 40px !important;
+    // margin-bottom: 40px !important;
   }
 
   &::before {
@@ -25,6 +27,12 @@
     width: 70px;
     left: 0;
     top: 15px;
+
+    @media (max-width: 1400px) {
+      height: 4px;
+      width: 50px;
+      top: 20px;
+    }
 
     @media (max-width: 1200px) {
       display: none;

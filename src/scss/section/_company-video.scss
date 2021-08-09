@@ -2,6 +2,10 @@
 .company-video {
   padding: 60px 0 90px;
 
+  @media (max-width: 900px) {
+    display: none;
+  }
+
   .title {
     max-width: 650px;
   }

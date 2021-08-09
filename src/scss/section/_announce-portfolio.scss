@@ -2,6 +2,10 @@
 .announce-portfolio {
   padding: 70px 0 60px;
   background-color: #f6f6f6;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 }
 
 .announce-portfolio__item {

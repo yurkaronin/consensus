@@ -6,13 +6,11 @@
 .director-card__photo {
   max-width: 100%;
   position: relative;
-  // top: 52px;
-  // left: 0;
   z-index: 0;
   display: block;
-  width: 100%;
   object-fit: cover;
   margin-bottom: 45px;
+  margin-top: 50px;
 }
 
 .director-card__bottom {

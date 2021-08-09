@@ -1,6 +1,19 @@
 // секция-директора
 .talk-director {
   padding: 65px 0 25px;
+
+  .section-header {
+    margin-bottom: 35px;
+  }
+
+  .section-header__title {
+    padding-right: 0;
+  }
+
+  .lead {
+    padding-left: 50px;
+  }
+
   .big-text {
     max-width: 470px;
   }

@@ -1,10 +1,10 @@
 /* блок ШАПКА СЕКЦИИ */
 .section-header {
   display: grid;
-  gap: 30px;
+  gap: 160px;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 65px;
+  margin-bottom: 50px;
 
   @media (max-width: 1200px) {
     gap: 20px;

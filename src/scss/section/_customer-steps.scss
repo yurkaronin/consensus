@@ -1,1 +1,97 @@
 // шаги клиента
+.customer-steps {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 70px 0 110px;
+  background-image: url("../img/bg/2.jpg");
+
+  @media (max-width: 900px) {
+    background-image: none;
+  }
+
+  .wrapper {
+  }
+
+  .section-header {
+  }
+  .section-header__title {
+  }
+  .decor-strip {
+  }
+  .title {
+  }
+  .title--white {
+  }
+  .title__inversion {
+  }
+}
+
+.customer-steps__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.customer-steps__item {
+  max-width: 314px;
+  position: relative;
+
+  &::after {
+    content: "01";
+    display: block;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 140px;
+    line-height: 120%;
+    text-transform: uppercase;
+    position: absolute;
+    top: 60px;
+    left: -125px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+  }
+
+  &-2::after {
+    content: "02";
+  }
+  &-3::after {
+    content: "03";
+  }
+
+  .link-custom {
+  }
+}
+.customer-steps__image {
+  display: block;
+  margin-bottom: 60px;
+}
+.customer-steps__item-name {
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.customer-steps__item-description {
+  font-size: 14px;
+  line-height: 160%;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.customer-steps__link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  // text-decoration-line: underline;
+  color: #c76d3f;
+}

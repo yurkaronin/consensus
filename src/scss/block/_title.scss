@@ -65,6 +65,10 @@
       font-size: 22px;
     }
   }
+
+  &--white {
+    color: #ffffff;
+  }
 }
 
 .title__inversion {
@@ -73,7 +77,8 @@
 }
 
 .title--big .title__inversion,
-.title--small .title__inversion {
+.title--small .title__inversion,
+.title--white .title__inversion {
   color: #000000;
   text-shadow: 1px 0 1px #ffffff, 0 1px 1px #ffffff, -1px 0 1px #ffffff, 0 -1px 1px #ffffff;
 }

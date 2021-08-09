@@ -1,1 +1,46 @@
 // форма-для-вопроса
+.form-question {
+  background-color: #222728;
+  color: #ffffff;
+  padding: 70px 0 100px;
+  background-image: url("../img/bg/1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  position: relative;
+  z-index: 0;
+
+  @media (max-width: 900px) {
+    background-image: none;
+  }
+
+  &::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+  .wrapper {
+    position: relative;
+    z-index: 5;
+  }
+
+  .title {
+    max-width: 350px;
+
+    @media (max-width: 1400px) {
+      max-width: 100%;
+    }
+  }
+
+  .section-header {
+    display: block;
+  }
+}

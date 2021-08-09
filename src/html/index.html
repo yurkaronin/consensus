@@ -30,88 +30,31 @@
     <!-- разговор-директора -->
     @@include('section/talk-director.html')
     <!-- анонсы-портфолио -->
-    <section class="announce-portfolio">
-      <div class="wrapper">
-        <div class="service-bisnes__header section-header">
-
-          <div class="section-header__title decor-strip decor-strip--black">
-            <h2 class="title"><span class="title__inversion">Примеры</span> работ и выигранных дел</h2>
-          </div>
-        </div><!-- .section-header -->
-
-        <!-- Swiper -->
-        <div class="swiper-container mySwiper-2">
-          <div class="swiper-wrapper">
-
-            <a class="swiper-slide announce-portfolio__item" href="#">
-              <img class="announce-portfolio__image" src="./img/portfolio/1.png" alt="Фотография решения суда" width="433" height="524">
-              <h3 class="announce-portfolio__name">Изменили назначение земельного участка</h3>
-              <div class="announce-portfolio__lead">
-                <p>Отстояли в суде право магазина на ведение коммерческой деятельности, обжаловали предписание администрации Новороссийска</p>
-              </div>
-            </a>
-
-            <a class="swiper-slide announce-portfolio__item" href="#">
-              <img class="announce-portfolio__image" src="./img/portfolio/2.png" alt="Фотография решения суда" width="433"
-                height="524">
-              <h3 class="announce-portfolio__name">Изменили назначение земельного участка</h3>
-              <div class="announce-portfolio__lead">
-                <p>Отстояли в суде право магазина на ведение коммерческой деятельности, обжаловали предписание администрации
-                  Новороссийска</p>
-              </div>
-            </a>
-
-            <a class="swiper-slide announce-portfolio__item" href="#">
-              <img class="announce-portfolio__image" src="./img/portfolio/1.png" alt="Фотография решения суда" width="433"
-                height="524">
-              <h3 class="announce-portfolio__name">Изменили назначение земельного участка</h3>
-              <div class="announce-portfolio__lead">
-                <p>Отстояли в суде право магазина на ведение коммерческой деятельности, обжаловали предписание администрации
-                  Новороссийска</p>
-              </div>
-            </a>
-
-            <a class="swiper-slide announce-portfolio__item" href="#">
-              <img class="announce-portfolio__image" src="./img/portfolio/2.png" alt="Фотография решения суда" width="433"
-                height="524">
-              <h3 class="announce-portfolio__name">Изменили назначение земельного участка</h3>
-              <div class="announce-portfolio__lead">
-                <p>Отстояли в суде право магазина на ведение коммерческой деятельности, обжаловали предписание администрации
-                  Новороссийска</p>
-              </div>
-            </a>
-
-            <a class="swiper-slide announce-portfolio__item" href="#">
-              <img class="announce-portfolio__image" src="./img/portfolio/1.png" alt="Фотография решения суда" width="433"
-                height="524">
-              <h3 class="announce-portfolio__name">Изменили назначение земельного участка</h3>
-              <div class="announce-portfolio__lead">
-                <p>Отстояли в суде право магазина на ведение коммерческой деятельности, обжаловали предписание администрации
-                  Новороссийска</p>
-              </div>
-            </a>
-
-            <a class="swiper-slide announce-portfolio__item" href="#">
-              <img class="announce-portfolio__image" src="./img/portfolio/2.png" alt="Фотография решения суда" width="433"
-                height="524">
-              <h3 class="announce-portfolio__name">Изменили назначение земельного участка</h3>
-              <div class="announce-portfolio__lead">
-                <p>Отстояли в суде право магазина на ведение коммерческой деятельности, обжаловали предписание администрации
-                  Новороссийска</p>
-              </div>
-            </a>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-
-      </div>
-    </section>
+    @@include('section/announce-portfolio.html')
     <!-- форма-для-вопроса -->
     <section class="form-question">
       <div class="wrapper">
-        <h2 class="title">Консультация бесплатно</h2>
+
+        <div class="service-bisnes__header section-header">
+
+          <div class="section-header__title decor-strip">
+            <h2 class="title title--white">Консультация <span class="title__inversion">бесплатно</span></h2>
+          </div>
+        </div><!-- .section-header -->
+
+        <div class="form-question__form custom-form">
+          <form action="">
+            <input class="custom-form__input" name="name" id="write-us-name" type="text" placeholder="Ваше имя">
+
+            <textarea class="custom-form__input--text" name="message" id="write-us-message" cols="30"
+              rows="3">В свободной форме</textarea>
+
+              <input class="custom-form__input" name="tel" id="write-us-telephone" type="tel" placeholder="Ваш телефон">
+
+            <button class="custom-form__button  button-custom" type="submit">Получить консультацию</button>
+          </form>
+        </div>
+
       </div>
     </section>
     <!-- видео-нашей-компании -->

@@ -8,22 +8,6 @@
   @media (max-width: 900px) {
     display: none;
   }
-
-  .wrapper {
-  }
-
-  .section-header {
-  }
-  .section-header__title {
-  }
-  .decor-strip {
-  }
-  .title {
-  }
-  .title--white {
-  }
-  .title__inversion {
-  }
 }
 
 .customer-steps__list {
@@ -80,9 +64,6 @@
   &-3::after {
     content: "03";
   }
-
-  .link-custom {
-  }
 }
 .customer-steps__image {
   display: block;
@@ -132,6 +113,5 @@
   display: flex;
   align-items: center;
   letter-spacing: 2px;
-  // text-decoration-line: underline;
   color: #c76d3f;
 }

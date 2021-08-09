@@ -1,1 +1,55 @@
 // анонсы-портфолио
+.announce-portfolio {
+  padding: 70px 0 60px;
+  background-color: #f6f6f6;
+}
+
+.announce-portfolio__item {
+  margin-bottom: 60px;
+  text-decoration: none;
+
+  @media (max-width: 1400px) {
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+}
+
+.announce-portfolio__image {
+  max-width: 433px;
+  display: block;
+
+  @media (max-width: 1400px) {
+    max-width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.announce-portfolio__name {
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: 1px;
+  color: #000000;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 30px;
+
+  @media (max-width: 1400px) {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}
+
+.announce-portfolio__lead {
+  font-size: 14px;
+  line-height: 160%;
+  color: #000000;
+
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}

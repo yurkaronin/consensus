@@ -92,20 +92,20 @@
     margin: 0 auto;
     display: block;
   }
-
-  .swiper-pagination-bullet {
-    border: 1px solid #d9723f;
-    background-color: #d9723f;
-    width: 10px;
-    height: 10px;
-    opacity: 1;
-  }
-
-  .swiper-pagination-bullet-active {
-    background-color: transparent;
-  }
 }
 
 .best-case__swiper-wrapper {
   margin-bottom: 40px;
+}
+
+.swiper-pagination-bullet {
+  border: 1px solid #d9723f;
+  background-color: #d9723f;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: transparent;
 }

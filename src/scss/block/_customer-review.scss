@@ -4,12 +4,18 @@
   display: grid;
   gap: 45px;
   grid-template-columns: auto auto;
+
+  @media (max-width: 550px) {
+    grid-template-columns: auto;
+    gap: 5px;
+  }
 }
 
 .customer-review__left {
   max-width: 195px;
   position: relative;
   height: max-content;
+  order: 100;
 }
 
 .customer-review__photo {
@@ -34,6 +40,11 @@
 
 .customer-review__right {
   max-width: 435px;
+
+  @media (max-width: 550px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .customer-review__autor {
   font-style: normal;
@@ -43,6 +54,10 @@
   color: #000000;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (max-width: 550px) {
+    margin-bottom: 0;
+  }
 }
 .customer-review__text {
   font-size: 14px;

@@ -81,6 +81,29 @@ var swiper = new Swiper(".mySwiper-4", {
   }
 });
 
+var swiper = new Swiper(".mySwiper-5", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 480px
+    210: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    900: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    // when window width is >= 640px
+    1350: {
+      slidesPerView: 5,
+      spaceBetween: 45,
+    }
+  }
+});
+
 // вставка видео с ютуба
 function findVideos() {
   let e = document.querySelectorAll(".video-block")

@@ -1,20 +1,28 @@
-// Слайдер в первом экране главной страницы
+// Слайдер лучшие выиграные дела - темный фон
 var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
   },
   autoHeight: true,
-  /* autoplay: {
+  loop: true,
+  autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-  }, */
+  },
 });
 
+// Слайдер Примеры работ и выигранных дел
 var swiper = new Swiper(".mySwiper-2", {
   freeMode: true,
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    // clickable: true,
+  },
+  autoHeight: true,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   breakpoints: {
     // when window width is >= 320px
@@ -34,11 +42,16 @@ var swiper = new Swiper(".mySwiper-2", {
     }
   }
 });
-
+// Слайдер Видео с ютуба
 var swiper = new Swiper(".mySwiper-3", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   breakpoints: {
     // when window width is >= 480px
@@ -57,11 +70,16 @@ var swiper = new Swiper(".mySwiper-3", {
     }
   }
 });
-
+// Отзывы о нас
 var swiper = new Swiper(".mySwiper-4", {
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+  },
+  autoHeight: true,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   breakpoints: {
     // when window width is >= 480px
@@ -76,7 +94,7 @@ var swiper = new Swiper(".mySwiper-4", {
     // when window width is >= 640px
     1350: {
       slidesPerView: 2,
-      spaceBetween: 45,
+      spaceBetween: 70,
     }
   }
 });
@@ -85,6 +103,12 @@ var swiper = new Swiper(".mySwiper-5", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    autoHeight: true,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
   },
   breakpoints: {
     // when window width is >= 480px

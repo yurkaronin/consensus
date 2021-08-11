@@ -44,3 +44,28 @@
     display: block;
   }
 }
+
+.form-question--mobile {
+  display: none;
+
+  @media (max-width: 900px) {
+    display: block;
+  }
+
+  .section-header {
+    margin-bottom: 30px;
+  }
+
+  .section-header__title {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto;
+  }
+
+  .subtitle {
+    p {
+      margin: 0;
+      margin-bottom: 5px;
+    }
+  }
+}

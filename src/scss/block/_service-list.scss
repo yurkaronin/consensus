@@ -14,7 +14,7 @@
 
   @media (max-width: 500px) {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 60px;
   }
 }
 
@@ -37,6 +37,7 @@
       text-decoration: underline;
       color: #d9723f;
       min-height: auto;
+      margin-bottom: 10px;
     }
 
     h3 {
@@ -55,6 +56,7 @@
       @media (max-width: 750px) {
         font-size: 22px;
         max-width: 100% !important;
+        font-weight: 700;
       }
     }
 
@@ -62,6 +64,7 @@
       position: absolute;
       top: 15px;
       right: 0;
+      // transform: rotateY(180deg);
       @media (max-width: 750px) {
         display: none;
       }

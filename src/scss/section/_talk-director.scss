@@ -24,6 +24,10 @@
 
   .offer-custom__list {
     margin-bottom: 95px;
+
+    @media (max-width: 500px) {
+      margin-bottom: 45px;
+    }
   }
 
   .list-sume {

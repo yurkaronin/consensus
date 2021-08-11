@@ -2,6 +2,7 @@
 var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
   autoHeight: true,
   loop: true,
@@ -16,7 +17,7 @@ var swiper = new Swiper(".mySwiper-2", {
   freeMode: true,
   pagination: {
     el: ".swiper-pagination",
-    // clickable: true,
+    clickable: true,
   },
   autoHeight: true,
   loop: true,
@@ -49,10 +50,6 @@ var swiper = new Swiper(".mySwiper-3", {
     clickable: true,
   },
   loop: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
   breakpoints: {
     // when window width is >= 480px
     210: {
@@ -74,25 +71,22 @@ var swiper = new Swiper(".mySwiper-3", {
 var swiper = new Swiper(".mySwiper-4", {
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
   autoHeight: true,
   loop: true,
-  autoplay: {
+  /* autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-  },
+  }, */
   breakpoints: {
     // when window width is >= 480px
     210: {
       slidesPerView: 1,
-      spaceBetween: 20
-    },
-    900: {
-      slidesPerView: 2,
-      spaceBetween: 20
+      spaceBetween: 0
     },
     // when window width is >= 640px
-    1350: {
+    970: {
       slidesPerView: 2,
       spaceBetween: 70,
     }

@@ -1,14 +1,17 @@
 .customer-review {
-  max-width: 675px;
   max-width: 575px;
   margin: 0;
   display: grid;
   gap: 25px;
   grid-template-columns: auto auto;
 
+  @media (max-width: 970px) {
+    max-width: max-content;
+  }
+
   @media (max-width: 550px) {
     grid-template-columns: auto;
-    gap: 5px;
+    gap: 20px;
   }
 }
 
@@ -17,6 +20,10 @@
   position: relative;
   height: max-content;
   order: 100;
+
+  @media (max-width: 970px) {
+    order: -1;
+  }
 
   @media (max-width: 550px) {
     max-width: max-content;
@@ -48,6 +55,16 @@
   bottom: -12px;
   right: -22px;
 
+  @media (max-width: 1400px) {
+    right: auto;
+    left: -12px;
+  }
+
+  @media (max-width: 970px) {
+    right: -12px;
+    left: auto;
+  }
+
   @media (max-width: 550px) {
     font-size: 12px;
     letter-spacing: initial;
@@ -62,7 +79,7 @@
 
   @media (max-width: 550px) {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     max-width: max-content;
     margin: 0 auto;
   }

@@ -72,13 +72,15 @@
 }
 
 .title__inversion {
-  color: #ffffff;
-  text-shadow: 1px 0 1px #000000, 0 1px 1px #000000, -1px 0 1px #000000, 0 -1px 1px #000000;
+  color: transparent;
+  -webkit-text-stroke: 1px #000000;
+  text-stroke: 1px #000000;
 }
 
 .title--big .title__inversion,
 .title--small .title__inversion,
 .title--white .title__inversion {
-  color: #000000;
-  text-shadow: 1px 0 1px #ffffff, 0 1px 1px #ffffff, -1px 0 1px #ffffff, 0 -1px 1px #ffffff;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  text-stroke: 1px #ffffff;
 }
